@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+
+  --h1: #2b2522;
+  --p: #2e2521;
+  --bg-button: #7b4f3f;
+  --fc: #ffffff;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+#app {
+  padding: 5rem 25rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+nav img {
+  width: 150px;
+}
+.slogan {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.slogan h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  width: 550px;
+  color: var(--h1);
+}
+.slogan .note {
+  width: 250px;
+  font-size: 15px;
+  line-height: 170%;
+  color: var(--p);
+}
+.slogan .note button {
+  background: var(--bg-button);
+  border: 1px solid var(--bg-button);
+  color: var(--fc);
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 2rem 5rem;
+  width: 100%;
+  margin-top: 3rem;
+}
+.figure {
+  width: 275px;  
+}
+.figure img {
+  width: 100%;
+}
+.coletion {
+  margin-top: 110px;
+  display: grid;
+  grid-template-areas:
+    " .  . E . ."
+    " .  C E D ."
+    " A  C E D G"
+    " A  B E F G";
+}
+
+.coletion div:nth-child(1){
+    grid-area: A;
+}
+.coletion div:nth-child(2){
+    grid-area: B;
+    
+}
+.coletion div:nth-child(3){
+    grid-area: C;
+    
+}
+.coletion div:nth-child(4){
+    grid-area: D;
+    
+}
+.coletion div:nth-child(5){
+    grid-area: E;
+    
+}
+.coletion div:nth-child(6){
+    grid-area: F;
+    
+}
+.coletion div:nth-child(7){
+    grid-area: G;
+    
+}
+
+.wrapper{
+    display: flex;
+
+}
+.wrapper-cards{
+    padding: 0rem 25rem;
+    position: absolute;
+    left: 0;
+    top: 945px;
+    width: 100%;
+    background-color: var(--h1);
+}
+.wrapper-cards h2{
+    color: var(--fc);
+    font-size: 3.4rem;
+    font-weight: 200;  margin: 75px 0;
+    width: 350px;
+}
+.wrapper-shop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.shop-card{
+    width: 250px;
+    height: 300px;
+    background: var(--bg-button);
+}
+
+.shop{
+    display: flex;
+
+}
